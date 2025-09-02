@@ -1,46 +1,122 @@
-# Getting Started with Create React App
+# Product Management System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern product management application with an intuitive user interface built with React, TypeScript, and Tailwind CSS.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- 📋 Product table with detailed information
+- ➕ Add new products
+- ✏️ Edit existing products
+- 🗑️ Delete products
+- 🏷️ Product labels for easy identification
+- 📝 Product descriptions
+- 🔧 Problems that each product solves
+- 🏭 Industry management for each product
+- 📊 Product status tracking (Active, Inactive, Draft)
+- 🔍 Search and filter functionality
+- 📅 Creation date tracking
+- 📱 Responsive interface
+- 🎨 Modern Tailwind CSS design
 
-### `npm start`
+## Installation and Setup
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Install dependencies:
+```bash
+npm install
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+2. Run the application in development mode:
+```bash
+npm start
+```
 
-### `npm test`
+3. Open your browser at: `http://localhost:3000`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## How to Use
 
-### `npm run build`
+### Home Page
+- Landing page with navigation to the system
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Products Page
+- **View Products**: The table displays all products with their details
+- **Add Product**: Click "Add New Product" and fill in the details
+- **Edit Product**: Click the pencil icon next to the desired product
+- **Delete Product**: Click the trash icon next to the desired product
+- **Search Products**: Use the search bar to find products by name, label, description, or industry
+- **Filter by Status**: Use the status filter to show only products with specific status
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Adding/Editing a Product
+- **Product Name**: Enter the product name
+- **Product Label**: Enter a unique label (e.g., PROD-001)
+- **Description**: Enter a detailed description of the product
+- **Problems Solved**: Enter problems that the product solves (comma separated)
+- **Industries**: Enter industries separated by commas (e.g., Technology, Finance, Healthcare)
+- **Status**: Choose from Active, Inactive, or Draft
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Technologies
 
-### `npm run eject`
+- React 18
+- TypeScript
+- Tailwind CSS
+- React Router
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Project Structure
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+src/
+├── components/     # Shared components
+├── pages/         # Application pages
+│   └── Products.tsx  # Product management page
+├── App.tsx        # Main component
+└── index.tsx      # Entry point
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## New Features Added
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Product Descriptions
+- Each product now has a detailed description
+- Descriptions are displayed in the products table
+- Search functionality includes descriptions
 
-## Learn More
+### Problems Solved
+- Each product lists the problems it solves
+- Problems are displayed as purple chips in the table
+- Multiple problems can be added per product
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Product Labels
+- Each product has a unique label for easy identification
+- Labels are displayed as blue chips in the table
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Product Status
+- Products can have three statuses: Active, Inactive, or Draft
+- Status is displayed with color-coded chips
+- Filter products by status
+
+### Search and Filter
+- Search products by name, label, description, or industry
+- Filter products by status
+- Real-time search results
+
+### Creation Date
+- Track when each product was created
+- Displayed in the products table
+
+### Enhanced UI with Tailwind CSS
+- Modern, clean design using Tailwind CSS
+- Responsive layout that works on all devices
+- Color-coded status indicators
+- Improved table layout with more information
+- Beautiful modal dialogs for adding/editing products
+- Hover effects and smooth transitions
+
+## Future Development
+
+- Database integration for data persistence
+- User authentication
+- Advanced filtering and sorting
+- Data export functionality
+- Change history tracking
+- Bulk operations
+- Product categories and tags
+- Image upload for products
+- Product reviews and ratings
